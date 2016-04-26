@@ -1,1 +1,1 @@
-# getnets
+# Heroku Django TestProject

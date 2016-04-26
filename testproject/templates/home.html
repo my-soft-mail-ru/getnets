@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+     <meta charset="UTF-8">
+    <title>Главная :: GetNets - отправка сообщений в гетерогенные сети</title>
+    <style>
+        td{text-align: left; vertical-align: top;}
+        th{text-align: right; vertical-align: top;}
+        select,input{width:200px;}
+    </style>
+</head>
+<body>
+    <h1>Главная :: GetNets - отправка сообщений в гетерогенные сети</h1>
+    <div style="width:500px; padding: 50px 20px; border: 1px #ccc solid;">
+        <table>
+        <form name="SendForm" action="." method="post">
+            {% csrf_token %}
+            {{ form }}
+         </form>
+        </table>
+        <button onclick="javascript:SendForm.submit();"
+                style="float: right; margin: 20px;" type="submit">
+            Отправить
+        </button>
+   </div>
+</body>
+</html>
